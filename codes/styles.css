@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: rgb(190, 190, 190);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 550px){
+    #mainCard{
+        background-color: white;
+    
+        width: 45rem;
+        height: 30rem;
+        margin: 5em;
+    }
+
+    footer{
+        background-color: rgb(158, 158, 158);
+        padding: 2rem;
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #mainCard{
+        background-color: white;
+    
+        width: 50rem;
+        height: 30rem;
+        margin: 2em;
+    }
+
+    footer{
+        background-color: rgb(158, 158, 158);
+        padding: 1rem;
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
