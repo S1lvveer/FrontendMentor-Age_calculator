@@ -17,8 +17,37 @@
 <body>
   <section class="wrapper">
     <div id="mainCard">
-      <div class="theNums">
-        
+      <form action="" class="theNums">
+        <div class="imputForm">
+          <label for="day">DAY</label>
+          <input type="text" id="days" class="transitionBase" maxlength="2" placeholder="DD">
+        </div>
+        <div class="imputForm">
+          <label for="month">MONTH</label>
+          <input type="text" id="months" class="transitionBase" maxlength="2" placeholder="MM">
+        </div>
+
+        <div class="imputForm">
+          <label for="year">YEAR</label>
+          <input type="text" id="years" class="transitionBase" maxlength="4" placeholder="YYYY">
+        </div>
+      </form>
+
+      <div id="thatLine">
+        <div id="painHR">
+          <hr style="background-color: lightgray; color: lightgray; border: 1px solid lightgray;">
+        </div>
+        <button id="circleBTN" class="transitionBase">
+          <div id="circle">
+            <img src="../assets/icon-arrow.svg" alt="arrow">
+          </div>
+        </button>
+      </div>
+
+      <div class="finish">
+        <p><span id="finYears">--</span> years</p>
+        <p><span id="finMonths">--</span> months</p>
+        <p><span id="finDays">--</span> days</p>
       </div>
     </div>
   </section>
@@ -29,5 +58,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     </div>
   </footer>
+  <script src="../codes/script.js"></script>
 </body>
 </html>

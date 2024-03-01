@@ -4,11 +4,98 @@ body{
     background-color: rgb(190, 190, 190);
 }
 
+#thatLine{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+#painHR{
+    width: 100%;
+    margin: 0;
+}
+
+#circle{
+    border-radius: 50%;
+    background-color: blueviolet;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+}
+#circleBTN{
+    outline: none; 
+    background-color: transparent; 
+    border: 0;
+}
+.transitionBase{
+    transition: 0.3s;
+}
+.transitionBase:hover{
+    transition: 0.3s;
+    scale: 110%;
+}
+
+
 .wrapper{
     display: flex;
     justify-content: center;
 }
 
+#mainCard{
+    padding: 3em;
+    border-radius: 20px;
+    border-radius: 20px 20px 30% 20px;
+}
+
+.theNums input{
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+
+    padding: 4%;
+    margin: 0 0.5em 0.5em 0em;
+
+    border-radius: 0.5em;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+.theNums input[type=text]:focus{
+    border: 2px solid blueviolet;
+    caret-color: blueviolet;
+}
+
+.imputForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.imputForm label{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+.finish{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3em;
+}
+.finish p{
+    margin: 0;
+    font-size: 1.5em;
+}
+.finish span{
+    color: blueviolet;
+}
+
+footer{
+    background-color: rgb(158, 158, 158);
+    text-align: center;
+    bottom: 0;
+}
 @media only screen and (min-width: 550px){
     #mainCard{
         background-color: white;
@@ -19,10 +106,17 @@ body{
     }
 
     footer{
-        background-color: rgb(158, 158, 158);
         padding: 2rem;
         font-size: 1.2em;
-        text-align: center;
+    }
+    
+    .theNums{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+    .theNums input{
+        width: 55%;
     }
 }
 
@@ -36,9 +130,7 @@ body{
     }
 
     footer{
-        background-color: rgb(158, 158, 158);
         padding: 1rem;
         font-size: 1.2em;
-        text-align: center;
     }
 }
